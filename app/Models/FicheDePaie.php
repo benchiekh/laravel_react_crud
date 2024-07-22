@@ -32,4 +32,9 @@ class FicheDePaie extends Model
     {
         return $this->belongsTo(Employee::class);
     }
+
+    public function cotisations()
+    {
+        return $this->hasMany(Cotisation::class);
+    }
 }
